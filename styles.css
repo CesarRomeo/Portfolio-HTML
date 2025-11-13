@@ -529,21 +529,22 @@ body.light-mode .theme-toggle .moon-icon {
 }
 
 .education-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 .education-card {
   background: var(--white);
   color: var(--text-dark);
-  padding: 30px;
+  padding: 40px;
   border-radius: var(--border-radius);
   text-align: center;
   transition: var(--transition);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
 }
 
 .education-card:hover {
@@ -1047,7 +1048,12 @@ body.light-mode .theme-toggle .moon-icon {
   }
 
   .education-grid {
-    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .education-card {
+    padding: 30px 20px;
   }
 
   .skills-grid {
